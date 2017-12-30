@@ -11,4 +11,5 @@
 |
 */
 
-Route::get('/', 'MetroTransportController@TransportUpdate');
+Route::get('/insert/update/{transport_type}', 'MetroTransportController@TransportUpdate');
+Route::get('/success', 'MetroTransportController@TransportUpdateComplete');
